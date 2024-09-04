@@ -1,0 +1,105 @@
+.menu {
+    -moz-transform: translateX(22em);
+	-webkit-transform: translateX(22em);
+	-ms-transform: translateX(22em);
+	transform: translateX(22em);
+
+    transition: transform 0.45s;
+
+    background-color: var(--background-color-light);
+    width: 22em;
+    max-width: 80%;
+    padding: 3em;
+    height: 100%;
+    right: 0;
+    top: 0;
+    position: fixed;
+    z-index: 1000002;
+    visibility: visible;
+}
+
+.menu-active{
+    -moz-transform: translateX(0);
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+
+    transition: transform 0.45s;
+
+    opacity: 1 !important;
+}
+
+.menu ul li a {
+    background-color: transparent;
+    border-bottom: none;
+}
+
+.menu ul li {
+    margin-bottom: 0;
+    padding-top: 0.85em;
+    padding-bottom: 0.85em;
+}
+
+.menu ul li.indent {
+    text-indent: 12%;
+}
+
+.menu > .close {
+    -moz-transform: scale(0.4);
+    -webkit-transform: scale(0.4);
+    -ms-transform: scale(0.4);
+    transform: scale(0.4);
+
+    -moz-transition: opacity 0.45s ease, -moz-transform 0.45s ease;
+    -webkit-transition: opacity 0.45s ease, -webkit-transform 0.45s ease;
+    -ms-transition: opacity 0.45s ease, -ms-transform 0.45s ease;
+    transition: opacity 0.45s ease, transform 0.45s ease;
+
+    display: block;
+    position: absolute;
+    top: 1em;
+    left: -6em;
+    width: 6em;
+    height: 6em;
+    text-indent: 8em;
+    font-size: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23ffff%3B %7D%3C/style%3E%3Cline x1='15' y1='15' x2='85' y2='85' /%3E%3Cline x1='85' y1='15' x2='15' y2='85' /%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.menu-active > .close{
+    -moz-transform: scale(0.4) rotate(180deg);
+    -webkit-transform: scale(0.4) rotate(180deg);
+    -ms-transform: scale(0.4) rotate(180deg);
+    transform: scale(0.4) rotate(180deg);
+
+    transition: transform 0.45s ease;
+
+    pointer-events: all;
+}
+
+#menu ul li #topbar-icon {
+    margin-left: 0.8em;
+    margin-right: 0.8em;
+    width: 0.8em;
+    height: 0.8em;
+    border-width: 0;
+}
+
+.blur{
+	cursor:default;
+	opacity: 0.33;
+    
+    transition: opacity 0.45s;
+}
+
+.blur > * {
+    pointer-events: none;
+}

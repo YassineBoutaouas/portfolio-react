@@ -1,0 +1,30 @@
+.ability{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 1em;
+}
+
+.ability-label{
+	position: relative;
+	width: 14em;
+	font-weight: 400;
+	white-space: pre;
+	text-wrap: wrap;
+	text-align: left;
+}
+
+.progress-bar{
+	margin-left: 2em;
+	background-color: var(--shadow-color);
+	outline: 1px solid var(--outline-color);
+	border-radius: 4px;
+	height:1.5em;
+	width:40em;
+	margin-top: 0.33em;
+}
+
+.progress-bar div{
+	height:inherit;
+	border-radius: inherit;
+	background-color: var(--hyperlink-color);
+}

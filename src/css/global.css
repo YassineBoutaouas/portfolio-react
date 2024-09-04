@@ -1,0 +1,16 @@
+/*Global*/
+:root {
+    --background-color-main:#252525;
+    --background-color-light: #303030;
+    --shadow-color: #1d1d1d;
+    --outline-color: #4b4b4b;
+    --highlight-color: #686868;
+    
+    --font-color-main: #ffff;
+    --font-color-secondary: #c9c9c9;
+    
+    --hyperlink-color:#a47cd5;
+    --hover-color: #c395fd;
+    --active-color: #42283a;
+}
+/*End Global*/

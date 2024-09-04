@@ -1,0 +1,191 @@
+article{
+    -moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease, background-color 0.5s ease;
+	-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease, background-color 0.5s ease;
+	-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease, background-color 0.5s ease;
+	transition: transform 0.5s ease, opacity 0.5s ease, background-color 0.5s ease;
+
+    display:block;
+    text-align: center;
+	position: relative;
+    border-radius: 4px;
+}
+
+article img {
+    pointer-events: none;
+
+    -moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;         
+    -webkit-transition: -webkit-transform 0.5s ease,opacity 0.5s ease;
+    -ms-transition: -ms-transform 0.5s ease,opacity 0.5s ease;
+    transition: transform 0.5s ease,opacity 0.5s ease;
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 2;
+    opacity: 0.45;
+}
+
+article a {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    -moz-transition: background-color 0.5s ease, -moz-transform 0.5s ease;
+    -webkit-transition: background-color 0.5s ease, -webkit-transform 0.5s ease;
+    -ms-transition: background-color 0.5s ease, -ms-transform 0.5s ease;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    border-bottom: 0;
+    color: var(--font-color-main);
+    
+    text-align: center;
+    text-decoration: none;
+    z-index: 3;
+}
+
+article a:hover {
+    color: var(--font-color-main) !important;
+}
+
+article a h2 {
+    margin: 0;
+    font-size: 1em;
+}
+
+article a div {
+    -moz-transition: max-height 0.5s ease, opacity 0.5s ease;
+    -webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
+    -ms-transition: max-height 0.5s ease, opacity 0.5s ease;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+
+    width: 85%;
+    max-height: 0;
+    line-height: 1.5;
+    margin-top: 0.35em;
+    opacity: 0;
+}
+
+article a div p{
+    text-align: center;
+    font-size: 14pt;
+}
+
+article:hover{
+    transform: scale(1.1);
+    z-index: 5;
+    
+    background-color: transparent !important;
+
+    -moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease, background-color 0.5s ease;
+	-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease, background-color 0.5s ease;
+	-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease, background-color 0.5s ease;
+	transition: transform 0.5s ease, opacity 0.5s ease, background-color 0.5s ease;
+}
+
+article:hover img{
+    -moz-transition: opacity 0.5s ease;
+	-webkit-transition: opacity 0.5s ease;
+	-ms-transition: opacity 0.5s ease;
+	transition: opacity 0.5s ease;
+
+    opacity: 0.6;
+}
+
+article:hover a div{
+    opacity: 1;
+    max-height:15em;
+}
+
+article:hover a div h2{
+    font-size: 1em;
+}
+
+.tags{
+    z-index: 10;
+			
+    display: inline-block;
+    position:absolute;
+    bottom:0.5em;
+    left:0em;
+
+    margin-left: 0.5em;
+    pointer-events: none;
+}
+
+.tags > .icon {
+	background-size: 2.5em 2.5em;
+	background-position: center;
+	width: 2.8em;
+	height: 2.8em;
+	opacity: 0.8;
+    background-repeat: no-repeat;
+    border:none;
+    margin-right:0.1em;
+}
+
+.tags > #cpp{
+	background-image: url("../../public/images/CPP-ico.svg");
+}
+
+.tags > #csharp{
+	background-image: url("../../public/images/CSharp-ico.svg");
+}
+
+.tags > #ai{
+	background-image: url("../../public/images/AI-ico.svg");
+}
+
+.tags > #mt{
+	background-image: url("../../public/images/MT-ico.svg");
+}
+
+.tags > #oop{
+	background-image: url("../../public/images/OOP-ico.svg");
+}
+
+.tags > #unity{
+	background-image: url("../../public/images/Unity-ico.svg");
+}
+
+.tags > #dots{
+	background-image: url("../../public/images/DOTS-ico.svg");
+}
+
+.tags > #ecs{
+	background-image: url("../../public/images/ECS-ico.svg");
+}
+
+.tags > #ui{
+	background-image: url("../../public/images/UI-ico.svg");
+}
+
+.tags > #xml{
+	background-image: url("../../public/images/XML-ico.svg");
+}
+
+.tags > #css{
+	background-image: url("../../public/images/CSS-ico.svg");
+}
+
+.tags > #opengl{
+	background-image: url("../../public/images/OpenGL-ico.svg");
+}
+
+.tags > #three-d{
+	background-image: url("../../public/images/3D-ico.svg");
+}
+
+.tags > #glsl{
+	background-image: url("../../public/images/GLSL-ico.svg");
+}
+
+.tags > #imgui{
+	background-image: url("../../public/images/ImGUI-ico.svg");
+}
