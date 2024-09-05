@@ -1,4 +1,4 @@
-export default function Collapsible({text, tableData}){
+export default function Collapsible(props){
     const ToggleContent = (e) => {
         var content = e.target.nextElementSibling;
         e.target.classList.toggle("active-collapsible");
@@ -11,29 +11,47 @@ export default function Collapsible({text, tableData}){
         content.style.maxHeight = content.scrollHeight + "px";
     }
 
+    let data;
+    if(props.asTable === true)
+        data = RenderTableRows(props.tableData);
+    else
+        data = RenderChildren(props.children);
+
     return (
         <div>
-            <button className="collapsible" onClick={ToggleContent}>{text}</button>
+            <button className="collapsible" onClick={ToggleContent}>{props.title}</button>
             <div className="collapsible-content">
-                <table>
-                    <tbody>
-                        {RenderTableRows(tableData)}
-                    </tbody>
-                </table>
+                {data}
             </div>
         </div>
     );
 }
 
-function RenderTableRows({tableData}) {
+function RenderChildren(children){
+    return(
+        <div key="children">
+            <br></br>
+            {children}
+        </div>
+    );
+}
+
+  function RenderTableRows(tableData) {
     if (!tableData) return null;
     let result = [];
-    tableData.forEach((entry, index) => {
+    tableData.data.forEach((entry, index) => {
       result.push(
-        <tr>
-          <td key={index + 1}><a href={entry.link}>[{index + 1}]</a> {entry.description}</td>
+        <tr key={index + 1}>
+          <td><a href={entry.link}>[{index + 1}]</a> {entry.description}</td>
         </tr>
       )
     });
-    return result;
+
+    return (
+        <table>
+            <tbody>
+                {result}
+            </tbody>
+        </table>
+    );
   }

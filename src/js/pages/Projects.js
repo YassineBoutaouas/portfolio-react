@@ -1,29 +1,11 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-import Menu from '../components/Menu';
-import Topbar from "../components/Topbar";
-import Footer from "../components/Footer";
-import Ability from "../components/ProgressBar";
-import Article from "../components/Article";
+import BasePage from './BasePage';
+import Ability from '../components/ProgressBar';
+import Article from '../components/Article';
 
 export default function Projects(){
-    const [menuActive, ToggleMenu] = useState(false);
-    const CloseMenu = (e) => {
-      if(menuActive === false)
-        return;
-  
-      var content = document.getElementById("menu");
-      var closeButton = content.firstChild;
-      closeButton.style.opacity = 0;
-  
-      document.getElementById("overlay").classList.toggle("blur");
-      content.classList.toggle("menu-active");
-  
-      e.preventDefault();
-      e.stopPropagation();
-      ToggleMenu(false);
-    }
-
     const [skillsTab, ToggleSkillsTab] = useState(false);
     const OpenSkillsTab = (e) => {
       if(skillsTab === true)
@@ -50,26 +32,19 @@ export default function Projects(){
       displayedPage = ProjectsPage();
 
     return (
-    <div>
-      <Menu active={ToggleMenu} closeMenu={CloseMenu}/>
-      <div id="overlay" onClick={CloseMenu}>
-        <Topbar/>
-        <div className="inner">
-          <h1>Portfolio.</h1>
-          <p>
-				  	This page contains a collection of relevant projects. A description of each project is provided along with links to GitHub
-				  	repositories. If you want to read more about me, you can do so on the <a href="home.html">About me sub-page.</a>
-				  </p>
+      <BasePage title="Yassine Boutaouas (BA.)" tab="Portfolio.">
+        <h1>Portfolio.</h1>
+        <p>
+					This page contains a collection of relevant projects. A description of each project is provided along with links to GitHub
+					repositories. If you want to read more about me, you can do so on the <Link to="/AboutMe">About me sub-page.</Link>
+				</p>
 
-          <div className="row-no-space">
-            <button className="toggle-button-left toggle-button-active" onClick={CloseSkillsTab}>Projects</button>
-            <button className="toggle-button-right" onClick={OpenSkillsTab}>Skills</button>
-          </div>
-          {displayedPage}
+        <div className="row-no-space">
+          <button className="toggle-button-left toggle-button-active" onClick={CloseSkillsTab}>Projects</button>
+          <button className="toggle-button-right" onClick={OpenSkillsTab}>Skills</button>
         </div>
-        <Footer/>
-      </div>
-    </div>
+        {displayedPage}
+      </BasePage>
     );
 }
 
@@ -112,16 +87,16 @@ function ProjectsPage(){
   return (
     <div>
       <div className="grid2x2">
-        <Article src="images/GOAP_Pic.png" header="Goal-Oriented Action Planning" color="#00798C" articleTags={goapTags}>
+        <Article src="images/GOAP_Pic.png" header="Goal-Oriented Action Planning" color="#00798C" articleTags={goapTags} link="/Goap">
           A Goal-Oriented Action Planning solution developed for a bachelor thesis.
         </Article>
-        <Article src="images/CrowdSim_Pic.png" header="Realtime Crowd Simulation" color="#D1495B" articleTags={crowdSimTags}>
+        <Article src="images/CrowdSim_Pic.png" header="Realtime Crowd Simulation" color="#D1495B" articleTags={crowdSimTags} link="/CrowdSim">
           Comparison and implementation of different approaches to realtime crowd simulation.
         </Article>
-        <Article src="images/Graphics_Programming_Pic.png" header="3D Render Engine" color="#877846" articleTags={graphicsTags}>
+        <Article src="images/Graphics_Programming_Pic.png" header="3D Render Engine" color="#877846" articleTags={graphicsTags} link="/RenderEngine">
           A 3D render engine supporting obj-files, an interactive viewport and an entity-component workflow.
         </Article>
-        <Article src="images/Gameplay_Pic.png" header="Gameplay & Tool Programming" color="#3F3047" articleTags={gameplayTags}>
+        <Article src="images/Gameplay_Pic.png" header="Gameplay & Tool Programming" color="#3F3047" articleTags={gameplayTags} link="/Gameplay">
           An example of gameplay systems and tools created to aid the development process.
         </Article>
       </div>

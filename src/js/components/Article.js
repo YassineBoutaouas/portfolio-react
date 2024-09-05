@@ -1,3 +1,5 @@
+import {Link}  from 'react-router-dom';
+
 export default function Article(props){
     return(
         <article style={{backgroundColor: props.color}}>
@@ -5,12 +7,12 @@ export default function Article(props){
 			<div className="tags">
 				{RenderTags(props.articleTags)}
 			</div>
-			<a href="#">
+			<Link to={props.link}>
 				<h2>{props.header}</h2>
 				<div>
 					<p>{props.children}</p>
 				</div>
-			</a>
+			</Link>
 		</article>
     );
 }
@@ -22,6 +24,8 @@ function RenderTags(articleTags){
 	  result.push(
 		<div key={entry} id={entry} className="icon"/>
 	  )
+
+	  return articleTags;
 	});
 	return result;
 }
