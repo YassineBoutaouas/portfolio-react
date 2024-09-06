@@ -58,6 +58,10 @@ table{
             border-top: 0;
         }
 
+table tfoot tr td {
+    text-align: start;
+}
+
 .collapsible-content{
     padding: 0 1em;
 	max-height: 0;

@@ -35,7 +35,10 @@ export default function Projects(){
       <BasePage title="Yassine Boutaouas (BA.)" tab="Portfolio.">
         <h1>Portfolio.</h1>
         <p>
-					This page contains a collection of relevant projects. A description of each project is provided along with links to GitHub
+          This page has been developed with <b>JavaScript React</b>. Its visual design is largely based on <a href="https://html5up.net/phantom">this template on HTML5 Up.</a>
+          <br/>
+          <br/>
+					It contains a collection of relevant projects. A description of each project is provided along with links to GitHub
 					repositories. If you want to read more about me, you can do so on the <Link to="/AboutMe">About me sub-page.</Link>
 				</p>
 
