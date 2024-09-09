@@ -29,7 +29,7 @@ export default function Renderengine(){
                     The <b>metrics panel</b> displays the current fps (not shown in current image).
                 </p>
             },
-            {id:"editor-inspector", top:"0", left:"54%", width:"21%", height:"72.7%", borderRadius:"0 4px 0 0",
+            {id:"editor-inspector", top:"0", left:"54%", width:"21%", height:"59.5%", borderRadius:"0 4px 0 0",
                 description:
                 <p>
                     The <b>inspector panel</b> accesses a UI-registry, renders each component currently held by the selected entity and provides access to them. 
@@ -37,7 +37,7 @@ export default function Renderengine(){
 					Components such as physics components for example can be added to the project and rendered in the inspector as well.
                 </p>
             },
-            {id:"editor-processing", top:"72.5%", left:"54%", width:"21%", bottom:"0", borderRadius:"0 0 4px 0",
+            {id:"editor-processing", top:"59.5%", left:"54%", width:"21%", bottom:"0", borderRadius:"0 0 4px 0",
                 description:
                 <p>
                     The <b>post-processing panel</b> grants access to various post-processing and rendering effects. 
