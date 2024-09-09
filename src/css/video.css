@@ -166,10 +166,7 @@
 .video-react:-moz-full-screen {
   position: absolute;
 }
-.video-react:-webkit-full-screen {
-  width: 100% !important;
-  height: 100% !important;
-}
+
 .video-react *,
 .video-react *:before,
 .video-react *:after {

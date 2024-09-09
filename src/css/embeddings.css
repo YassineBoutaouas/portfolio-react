@@ -42,3 +42,38 @@ embed{
     border-radius: 4px;
     display: block;
 }
+
+.inspectable{
+    position: relative;
+}
+
+.inspectable div{
+    animation: pulse 3s infinite;
+    box-shadow: inset 0 0 2px 2px var(--important-color);
+    position: absolute;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.inspectable-active{
+    animation: none !important;
+}
+
+.inspectable-inactive{
+    animation: none !important;
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: none !important;
+}
+
+@keyframes pulse {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}

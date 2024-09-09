@@ -84,7 +84,7 @@ button.active-collapsible{
 
 	color: var(--font-color-secondary);
 	background-color: var(--highlight-color);
-    box-shadow: inset 0 0 0 2px transparent;
+    box-shadow: inset 0 0 0 0 #0000;
 
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' preserveAspectRatio='none' viewBox='0 -50 525 525'%3E%3Cpath d='M416 240c17.6699 0 32 -14.3301 32 -32v-32c0 -17.6699 -14.3301 -32 -32 -32h-384c-17.6699 0 -32 14.3301 -32 32v32c0 17.6699 14.3301 32 32 32h384z' fill='rgb(201, 201, 201)' /%3E%3C/svg%3E");
 	background-repeat: no-repeat;
