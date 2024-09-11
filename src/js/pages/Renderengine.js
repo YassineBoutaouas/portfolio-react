@@ -75,7 +75,7 @@ export default function Renderengine(){
     return(
         <BasePage title="Projects" tab="3D Engine.">
             <h1>3D Render Engine</h1>
-            <img className="banner" src="images/Renderengine_Banner.png" alt="Renderengine_Banner"/>
+            <img className="banner" src="images/RenderEngine_Banner.png" alt="Renderengine_Banner"/>
             <p>
 				This project contains a realtime 3D renderer. It provides an .obj file-parser, an interactive 3D viewport and supports an entity-component-workflow.
 				The aim of the project is to learn about various rendering concepts and realtime 3D application-workflows.
