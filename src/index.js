@@ -20,7 +20,7 @@ import Gameplay from './js/pages/Gameplay.js';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <Router>
+  <Router basename="/portfolio-react">
     <Routes>
       <Route path="/" element={<Projects/>}/>
       <Route path="/AboutMe" element={<AboutMe/>}/>
