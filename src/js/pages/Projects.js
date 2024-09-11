@@ -90,16 +90,16 @@ function ProjectsPage(){
   return (
     <div>
       <div className="grid2x2">
-        <Article src="images/GOAP_Pic.png" header="Goal-Oriented Action Planning" color="#00798C" articleTags={goapTags} link="/Goap">
+        <Article path="images/GOAP_Pic.png" header="Goal-Oriented Action Planning" color="#00798C" articleTags={goapTags} link="/Goap">
           A Goal-Oriented Action Planning solution developed for a bachelor thesis.
         </Article>
-        <Article src="images/CrowdSim_Pic.png" header="Realtime Crowd Simulation" color="#D1495B" articleTags={crowdSimTags} link="/CrowdSim">
+        <Article path="images/CrowdSim_Pic.png" header="Realtime Crowd Simulation" color="#D1495B" articleTags={crowdSimTags} link="/CrowdSim">
           Comparison and implementation of different approaches to realtime crowd simulation.
         </Article>
-        <Article src="images/Graphics_Programming_Pic.png" header="3D Render Engine" color="#877846" articleTags={graphicsTags} link="/RenderEngine">
+        <Article path="images/Graphics_Programming_Pic.png" header="3D Render Engine" color="#877846" articleTags={graphicsTags} link="/RenderEngine">
           A 3D render engine supporting obj-files, an interactive viewport and an entity-component workflow.
         </Article>
-        <Article src="images/Gameplay_Pic.png" header="Gameplay & Tool Programming" color="#3F3047" articleTags={gameplayTags} link="/Gameplay">
+        <Article path="images/Gameplay_Pic.png" header="Gameplay & Tool Programming" color="#3F3047" articleTags={gameplayTags} link="/Gameplay">
           An example of gameplay systems and tools created to aid the development process.
         </Article>
       </div>
