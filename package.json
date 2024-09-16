@@ -1,6 +1,6 @@
 {
   "homepage":"https://yassineboutaouas.github.io/portfolio-react/",
-  "name": "portfolio",
+  "name": "portfolio-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

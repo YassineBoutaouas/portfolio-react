@@ -3,7 +3,7 @@ import {Link}  from 'react-router-dom';
 export default function Article(props){
     return(
         <article style={{backgroundColor: props.color}}>
-		    <img src={props.path} alt=""/>
+		    <img src={`${process.env.PUBLIC_URL}/${props.path}`} alt=""/>
 			<div className="tags">
 				{RenderTags(props.articleTags)}
 			</div>
