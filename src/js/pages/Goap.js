@@ -37,7 +37,7 @@ export default function Goap(){
 				finite state machines at runtime through the use of the A* algorithm <a href="https://www.gdcvault.com/play/1022019/Goal-Oriented-Action-Planning-Ten">[1]</a>.
 			</p>
 
-            <img src = "images/GOAP_Plan.png" alt="GOAP-Schema" width="85%"height="85%"/>
+            <img src = "images/GOAP_Plan.png" alt="GOAP-Schema" width="85%" height="85%"/>
 			<sub>Example of a plan using the proposed backward planning model. Left to Right (Planning order), Right to Left (Execution order).</sub>
 
             <p>

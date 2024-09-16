@@ -1,14 +1,19 @@
+import { useState } from 'react';
+
 export default function Collapsible(props){
-    const ToggleContent = (e) => {
+    const [active, ToggleActive] = useState(false);
+    const ToggleContentState = (e) => {
         var content = e.target.nextElementSibling;
         e.target.classList.toggle("active-collapsible");
 
-        if (content.style.maxHeight){
-            content.style.maxHeight = null;
+        ToggleActive(!active);
+
+        if (active === false){
+            content.style.maxHeight = content.scrollHeight + "px";
             return;
         }
 
-        content.style.maxHeight = content.scrollHeight + "px";
+        content.style.maxHeight = null;
     }
 
     let data;
@@ -19,7 +24,7 @@ export default function Collapsible(props){
 
     return (
         <div>
-            <button className="collapsible" onClick={ToggleContent}>{props.title}</button>
+            <button className="collapsible" onClick={ToggleContentState}>{props.title}</button>
             <div className="collapsible-content">
                 {data}
             </div>

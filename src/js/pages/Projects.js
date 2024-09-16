@@ -76,7 +76,7 @@ function SkillsPage(){
       <hr/>
       <h3>Project Management</h3>
       <Ability label={'VCS\n(GitHub | Perforce | GitLab)'} percentage="75%"/>
-      <Ability label={'SCRUM\n(Backlog Grooming | Task Tracking etc.)'} percentage="75%"/>
+      <Ability label={'SCRUM\n(Backlog Grooming | \nTask Tracking etc.)'} percentage="75%"/>
     </div>
    );
 }

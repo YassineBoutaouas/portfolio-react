@@ -7,7 +7,7 @@ export default function AboutMe(){
             <h1>About Me</h1>
             <img className="banner" src="images/AboutMe_Banner.png" alt="AboutMe_Banner"/>
             <h2>Studies</h2>
-			<p align>
+			<p>
 				My name is Yassine. I have studied <a href = "https://ag.mediencampus.h-da.de/">Animation&Game (B.A.) </a> at the UAS in Darmstadt. 
 				The study program offers various disciplines centered around game development and allows to specialize in a few disciplines according to choice - programming in my case.
 			<br/><br/>

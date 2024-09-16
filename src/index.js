@@ -24,10 +24,10 @@ root.render(
     <Routes>
       <Route path="/" element={<Projects/>}/>
       <Route path="/AboutMe" element={<AboutMe/>}/>
-      <Route path="/Goap" element={ <Goap/>}/>
-			<Route path="/CrowdSim" element={ <CrowdSim/> }/>
-			<Route path="/RenderEngine" element={ <Renderengine/>}/>
-			<Route path="/Gameplay" element={ <Gameplay/>}/>
+      <Route path="/Goap" element={<Goap/>}/>
+  		<Route path="/CrowdSim" element={<CrowdSim/>}/>
+  		<Route path="/RenderEngine" element={<Renderengine/>}/>
+  		<Route path="/Gameplay" element={<Gameplay/>}/>
     </Routes>
   </Router>
 );

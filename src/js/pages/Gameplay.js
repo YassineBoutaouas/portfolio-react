@@ -27,7 +27,7 @@ export default function Gameplay(){
 				Each event consists of a method name and a set of generic values.
 				Methods with a corresponding name to the event configured in the editor are then invoked during the runtime of the game.
 			</p>
-            <div class="row">
+            <div className="row">
                 <div>
 				    <img className="zoom-hover" src = "images/SoundEditor_Create.png" alt="Sound Editor - Creation Window" width="95%" height="95%"/>
 				    <sub>Creation of a sound element.</sub>
