@@ -189,3 +189,23 @@ article:hover a div h2{
 .tags > #imgui{
 	background-image: url("../../public/images/ImGUI-ico.svg");
 }
+
+.tags > #mongodb{
+	background-image: url("../../public/images/MongoDB-ico.svg");
+}
+
+.tags > #express{
+	background-image: url("../../public/images/Express-ico.svg");
+}
+
+.tags > #react{
+	background-image: url("../../public/images/React-ico.svg");
+}
+
+.tags > #node{
+	background-image: url("../../public/images/Node-ico.svg");
+}
+
+.tags > #steam{
+	background-image: url("../../public/images/Steam-ico.svg");
+}

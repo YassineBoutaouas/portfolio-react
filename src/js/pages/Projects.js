@@ -66,13 +66,19 @@ function SkillsPage(){
       <Ability label="Data-Oriented Programming" percentage="60%"/>
       <Ability label={'Graphics Progamming\n(OpenGL)'} percentage="70%"/>
       <Ability label={'Shaders\n(GLSL | HLSL)'} percentage="70%"/>
-      <Ability label={'Frontend\n(ReactJS)'} percentage="50%"/>
+      <Ability label={'Frontend\n(ReactJS)'} percentage="70%"/>
+      <Ability label={'Backend\n(MongoDB | ExpressJS | NodeJS)'} percentage="45%"/>
       <hr/>
       <h3>Languages</h3>
       <Ability label={'Microsoft .NET C#'} percentage="90%"/>
       <Ability label={'C++'} percentage="85%"/>
-      <Ability label={'JavaScript'} percentage="50%"/>
+      <Ability label={'JavaScript'} percentage="70%"/>
       <Ability label={'Python'} percentage="50%"/>
+      <hr/>
+      <h3>Game Engines</h3>
+      <Ability label={'Unity Engine'} percentage="90%"/>
+      <Ability label={'Unreal Engine'} percentage="45%"/>
+      <Ability label={'3D Software\n(Blender | Maya)'} percentage="60%"/>
       <hr/>
       <h3>Project Management</h3>
       <Ability label={'VCS\n(GitHub | Perforce | GitLab)'} percentage="75%"/>
@@ -86,6 +92,7 @@ function ProjectsPage(){
   let crowdSimTags = ['csharp','unity', 'dots','ecs'];
   let graphicsTags = ['cpp','opengl', 'three-d', 'glsl', 'imgui'];
   let gameplayTags = ['csharp','unity', 'ui', 'xml', 'css'];
+  let webAppTags = ['mongodb','express', 'react', 'node', 'steam'];
 
   return (
     <div>
@@ -101,6 +108,9 @@ function ProjectsPage(){
         </Article>
         <Article path="images/Gameplay_Pic.png" header="Gameplay & Tool Programming" color="#3F3047" articleTags={gameplayTags} link="/Gameplay">
           An example of gameplay systems and tools created to aid the development process.
+        </Article>
+        <Article path="images/WebApp_Pic.png" header="Web application (Work in progress)" color="#006338" articleTags={webAppTags} link="#">
+          A simple web application built with the MERN stack.
         </Article>
       </div>
     </div>
