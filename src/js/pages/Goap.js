@@ -1,8 +1,9 @@
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
 
-import BasePage from './BasePage';
-import Video from '../components/Video';
-import Collapsible from '../components/Collapsible';
+import BasePage from './BasePage.js';
+import Video from '../components/Video.js';
+import Collapsible from '../components/Collapsible.js';
+import Banner from '../components/Banner.js'
 
 export default function Goap(){
     const thirdpartyAssets = {
@@ -26,7 +27,7 @@ export default function Goap(){
     return(
         <BasePage title="Projects" tab="GOAP.">
             <h1>Goal-Oriented Action Planning</h1>
-            <img className="banner" src="images/GOAP_Banner.png" alt="GOAP_Banner"/>
+            <Banner src="images/GOAP_Banner.png" href="https://github.com/YassineBoutaouas/GOAP_Project"/>
             <p>
 				This project contains a multi-project-solution for a Goal-Oriented Action Planning AI (GOAP) developed with C++ 17. 
 				It was developed within the scope of a bachelor thesis. The project proposes general algorithmic changes to GOAP
@@ -54,7 +55,7 @@ export default function Goap(){
 			<sub>Complete UML diagram.</sub>
 			<hr/>
             <h3>Example simulation</h3>
-            <Video path="videos/GOAP_Sim.mp4" width="60%" height="60%" loop={true}/>
+            <Video src="videos/GOAP_Sim.mp4" width="60%" loop={true}/>
             <sub>Example simulation containing multiple goals and plans prototyped in the Unity Engine.</sub>
             <hr/>
             <FullScreen handle={handle}>
@@ -63,7 +64,7 @@ export default function Goap(){
             </FullScreen>
             <hr/>
             <Collapsible title="Third Party Assets" asTable={true} tableData={thirdpartyAssets}/>
-            <h4>To the project:</h4>
+            <h4>Important links:</h4>
             <blockquote><a href="https://github.com/YassineBoutaouas/GOAP_Project">GitHub Link</a></blockquote>
         </BasePage>
     );

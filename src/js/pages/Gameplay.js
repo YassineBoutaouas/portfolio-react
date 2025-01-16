@@ -1,10 +1,11 @@
+import Banner from '../components/Banner';
 import BasePage from './BasePage';
 
 export default function Gameplay(){
     return(
         <BasePage title="Projects" tab="Gameplay & Tools.">
             <h1>Gameplay & Tools</h1>
-            <img className="banner" src="images/Gameplay_Banner.png" alt="Gameplay_Banner"/>
+			<Banner src="images/Gameplay_Banner.png" href="https://github.com/YassineBoutaouas/BeatDetection"/>
             <h3>Beat detection and Combat</h3>
 			<p>
 				(G)raveyard is a rythm based combat game developed for PC. Gameplay elements, the combat specifically, are beat dependent.
@@ -64,7 +65,7 @@ export default function Gameplay(){
 			<img className="zoom-hover" src = "images/SoundEditor_Rhythm_config.png" alt="Sound Editor - Rythm Configuration" width="49%" height="49%"/>
 			<sub>Configuring the rhythm.</sub>
             <br/><br/>
-            <h4>To the project:</h4>
+            <h4>Important links:</h4>
 			<blockquote>
 				<a href ="https://github.com/YassineBoutaouas/BeatDetection">Beat Detection - GitHub</a>
                 <br/>

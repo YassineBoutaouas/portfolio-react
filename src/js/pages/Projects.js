@@ -35,7 +35,7 @@ export default function Projects(){
       <BasePage title="Yassine Boutaouas (BA.)" tab="Portfolio.">
         <h1>Portfolio.</h1>
         <p>
-          I have developed this page with <b>JavaScript React</b>. Its visual design is largely based on <a href="https://html5up.net/phantom">this template on HTML5 Up.</a>
+          This page is developed with <b>JavaScript React</b>.
           <br/>
           <br/>
 					It contains a collection of relevant projects. A description of each project is provided along with links to GitHub
@@ -54,20 +54,20 @@ export default function Projects(){
 function SkillsPage(){
    return(
     <div>
-      <h3>About the scales</h3>
+      <h3>About the bars</h3>
 			<p align="justify">
 				Since there is no universally agreed-upon definition of 100% proficiency in programming concepts or languages, 
-				these scales should be interpreted in relation to each other. For example, this implies that I am more at ease 
+				these bars should be interpreted in relation to each other. For example, this implies that I am more at ease 
 				with object-oriented programming than with data-oriented programming.
 			</p>
       <hr/>
       <h3>Programming</h3>
       <Ability label="Object-Oriented Programming" percentage="90%"/>
       <Ability label="Data-Oriented Programming" percentage="60%"/>
-      <Ability label={'Graphics Progamming\n(OpenGL)'} percentage="70%"/>
+      <Ability label={'Graphics Programming\n(OpenGL | Direct3D)'} percentage="50%"/>
       <Ability label={'Shaders\n(GLSL | HLSL)'} percentage="70%"/>
       <Ability label={'Frontend\n(ReactJS)'} percentage="70%"/>
-      <Ability label={'Backend\n(MongoDB | ExpressJS | NodeJS)'} percentage="45%"/>
+      <Ability label={'Backend\n(MongoDB | ExpressJS | NodeJS)'} percentage="65%"/>
       <hr/>
       <h3>Languages</h3>
       <Ability label={'Microsoft .NET C#'} percentage="90%"/>
@@ -82,7 +82,7 @@ function SkillsPage(){
       <hr/>
       <h3>Project Management</h3>
       <Ability label={'VCS\n(GitHub | Perforce | GitLab)'} percentage="75%"/>
-      <Ability label={'SCRUM\n(Backlog Grooming | \nTask Tracking etc.)'} percentage="75%"/>
+      <Ability label={'SCRUM\n(Backlog Grooming | Task Tracking etc.)'} percentage="75%"/>
     </div>
    );
 }

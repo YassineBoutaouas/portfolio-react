@@ -126,3 +126,35 @@ button.active-collapsible:hover{
     color: var(--font-color-secondary);
     background-color: var(--outline-color);
 }
+
+.github-link{
+    display:flex;
+    flex-direction: row;
+    position:absolute;
+    align-content: center;
+    align-items: center;
+
+    right: 1em;
+    top:65%;
+    padding:0.25em;
+    padding-right:1em;
+    padding-left:1em;
+    border-bottom: none;
+    border-radius:3px;
+    background-color: #000000a6;
+}
+
+.github-link > p{
+    margin:0;
+}
+
+.github-link > div{
+    margin-right:1em;
+    border:none;
+    font-family: 'Font Awesome 5 Brands';
+}
+
+.github-link > div::before{
+    content:"\f09b";
+    font-size: 1.5em;
+}

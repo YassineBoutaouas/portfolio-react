@@ -1,9 +1,8 @@
 /*Tob-bar*/
-.topbar{
-	background-color:var(--background-color-light);
+.topbar {
+	background-color: var(--background-color-light);
 	box-shadow: 0 10px 10px var(--shadow-color);
-	align-items:center;
-	flex-direction: row;
+	align-items: center;
 	position: fixed;
 	z-index: 10000;
 
@@ -13,38 +12,65 @@
 	-ms-flex-direction: row;
 	flex-direction: row;
 	width: 100%;
-	height: 5em;
+	height: 4em;
 	max-height: 5em;
 }
 
-#header-space{
-	padding-top: 8em;
+.topbar .inner {
+	display: flex;
+	-moz-flex-direction: row;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	align-items: center;
+	text-align: center;
+}
+
+.topbar>.inner>* {
+	margin-bottom: 0;
+}
+
+.topbar>.inner>a {
+	color: var(--font-color-main);
+	border: none;
+}
+
+div.vertical-hr {
+	width: 2px;
+	height: 2.5em;
+	margin-right: 1em;
+	background-color: var(--outline-color);
+}
+
+#header-space {
+	padding-top: 10em;
 }
 
 /*Title*/
-.title{
+.title {
 	-moz-transition: color 0.2s ease-in-out;
 	-webkit-transition: color 0.2s ease-in-out;
 	-ms-transition: color 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out;
 
-	display:inline-block;
+	display: inline-block;
 	border-bottom: 0;
 	color: inherit;
 	font-weight: 900;
 	letter-spacing: 0.35em;
-	margin-bottom:2.5em;
+	margin-bottom: 2.5em;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 
-.title:hover{
+.title:hover {
 	-moz-transition: color 0.2s ease-in-out;
 	-webkit-transition: color 0.2s ease-in-out;
 	-ms-transition: color 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out;
 	color: var(--hover-color);
 }
+
 /*End Title*/
 
 /*Icon*/
@@ -66,9 +92,9 @@
 	border: solid 1px var(--outline-color);
 	border-radius: 4px;
 
-	width: 2.3em;
-	height: 2.3em;
-	line-height: 2.3em;
+	width: 2em;
+	height: 2em;
+	line-height: 2em;
 	text-align: center;
 	color: inherit;
 
@@ -77,22 +103,23 @@
 	font-size: 1.2em;
 }
 
-	.icon > .label {
-		display: none;
-	}
+.icon>.label {
+	display: none;
+}
 
-	.icon.solid {
-		font-weight: 900;
-	}
+.icon.solid {
+	font-weight: 900;
+}
 
-	.icon.brands {
-		font-family: 'Font Awesome 5 Brands';
-	}
+.icon.brands {
+	font-family: 'Font Awesome 5 Brands';
+}
 
-	.icon:hover {
-		color: var(--hover-color);
-		border-color: var(--hover-color);
-	}
+.icon:hover {
+	color: var(--hover-color);
+	border-color: var(--hover-color);
+}
+
 /*End Icon*/
 
 /*Header*/
@@ -101,10 +128,12 @@
 	right: 2em;
 	top: 1em;
 	z-index: 1000000;
+	padding: 0;
 }
 
 .nav button {
 	display: flex;
+	background-color: transparent;
 
 	-moz-transition: opacity 1s ease;
 	-webkit-transition: opacity 1s ease;
@@ -112,27 +141,26 @@
 	transition: opacity 1s ease;
 
 	position: relative;
-	height: 3em;
-	background-color: var(--outline-color);
+	height: 2em;
 	border-radius: 4px;
 	box-shadow: none;
 
-	margin:0;
+	margin: 0;
 	font-size: 1em;
-	
-	width: 4em;
+
+	width: 2em;
 	text-indent: 4em;
 	overflow: hidden;
 	content: '';
 
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 2em 2em;
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23ffff%3B %7D%3C/style%3E%3Cline x1='0' y1='25' x2='100' y2='25' /%3E%3Cline x1='0' y1='50' x2='100' y2='50' /%3E%3Cline x1='0' y1='75' x2='100' y2='75' /%3E%3C/svg%3E");					
+	background-size: 2em;
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23ffff%3B %7D%3C/style%3E%3Cline x1='0' y1='25' x2='100' y2='25' /%3E%3Cline x1='0' y1='50' x2='100' y2='50' /%3E%3Cline x1='0' y1='75' x2='100' y2='75' /%3E%3C/svg%3E");
 }
 
 .nav button:hover {
-	background-color: var(--highlight-color);
+	background-color: transparent;
 
 	background-position: center;
 	background-repeat: no-repeat;
@@ -140,4 +168,5 @@
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23c395fd%3B %7D%3C/style%3E%3Cline x1='0' y1='25' x2='100' y2='25' /%3E%3Cline x1='0' y1='50' x2='100' y2='50' /%3E%3Cline x1='0' y1='75' x2='100' y2='75' /%3E%3C/svg%3E");
 	box-shadow: none;
 }
+
 /*End Header*/

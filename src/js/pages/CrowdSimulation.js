@@ -1,11 +1,12 @@
 import BasePage from './BasePage';
 import Video from '../components/Video';
+import Banner from '../components/Banner';
 
 export default function CrowdSimulation(){
     return(
         <BasePage title="Projects" tab="Crowd Simulation.">
             <h1>Realtime Crowd Simulation</h1>
-            <img className="banner" src="images/CrowdSim_Banner.png" alt="CrowdSim_Banner"/>
+			<Banner src="images/CrowdSim_Banner.png" href="https://github.com/YassineBoutaouas/CrowdSimulation"/>
             <p>
 				This project compares different approaches to realtime crowd simulation. Specifically, the project
 				focuses on comparing object-oriented approaches to data-oriented approaches (DOTS).
@@ -22,7 +23,7 @@ export default function CrowdSimulation(){
 			</p>
             <img src="images/CrowdSim_Model.png" width="70%" height="70%" alt="CrowdSimulation Model"/>
 			<sub>Behavioral Model According to <a href=" https://doi.org/10.1007/s00354-007-0009-5">[2] </a><br/><br/></sub>
-			<Video path="videos/CrowdSimulation.mp4" autoPlay={true} loop={true} width="80%" height="80%"></Video>
+			<Video src="videos/CrowdSimulation.mp4" autoPlay={true} loop={true} width="80%"></Video>
 			<sub>Crowd simulation - Pathfinding Combined with Flocking Behaviors.</sub>
 			<hr/>
 			<h3>Results</h3>
@@ -38,7 +39,7 @@ export default function CrowdSimulation(){
 				The crowd simulation overall will greatly benefit from the inclusion of the RVO-algorithm. It would provide agents with proper avoidance. 
 				Due to time constraints and the lacking documentation of Unity's DOTS API, the simulation at hand does not include a sophisticated avoidance behavior.
 			</p>
-			<h4>To the project:</h4>
+			<h4>Important links:</h4>
 			<blockquote><a href ="https://github.com/YassineBoutaouas/CrowdSimulation">GitHub Link</a></blockquote>
         </BasePage>
     );

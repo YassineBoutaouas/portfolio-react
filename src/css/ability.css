@@ -2,25 +2,28 @@
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 1em;
+	align-items: center;
+	vertical-align: middle;
+	margin-bottom:2em;
 }
 
 .ability-label{
 	position: relative;
-	width: 14em;
+	width: 20em;
 	font-weight: 400;
 	white-space: pre;
 	text-wrap: wrap;
-	text-align: left;
+	text-align: start;
+	margin: 0;
+	margin-right:5em;
 }
 
 .progress-bar{
-	margin-left: 2em;
 	background-color: var(--shadow-color);
 	outline: 1px solid var(--outline-color);
 	border-radius: 4px;
-	height:1.5em;
-	width:40em;
-	margin-top: 0.33em;
+	height:0.7em;
+	width:70%;
 }
 
 .progress-bar div{

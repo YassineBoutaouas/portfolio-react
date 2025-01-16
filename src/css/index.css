@@ -8,7 +8,6 @@
 @import url("../css/actions.css");
 @import url("../css/ability.css");
 @import url("../css/embeddings.css");
-@import url("../css/video.css");
 @import url("../css/menu.css");
 @import url("../css/article.css");
 @import url("../css/scrollback.css");
@@ -36,7 +35,7 @@ body {
 	vertical-align: baseline;
 
 	-webkit-text-size-adjust: none;
-	-ms-overflow-style: scrollbar;
+	-ms-overflow-style: scroll;
 
 	font-size: 16pt;
 	font-weight: 300;
