@@ -66,8 +66,8 @@ function SkillsPage(){
       <Ability label="Data-Oriented Programming" percentage="60%"/>
       <Ability label={'Graphics Programming\n(OpenGL | Direct3D)'} percentage="50%"/>
       <Ability label={'Shaders\n(GLSL | HLSL)'} percentage="70%"/>
-      <Ability label={'Frontend\n(ReactJS)'} percentage="70%"/>
-      <Ability label={'Backend\n(MongoDB | ExpressJS | NodeJS)'} percentage="65%"/>
+      <Ability label={'Frontend\n(ReactJS | HTML)'} percentage="80%"/>
+      <Ability label={'Backend\n(MongoDB | ExpressJS | NodeJS | Javalin)'} percentage="65%"/>
       <hr/>
       <h3>Languages</h3>
       <Ability label={'Microsoft .NET C#'} percentage="90%"/>
@@ -78,7 +78,7 @@ function SkillsPage(){
       <h3>Game Engines</h3>
       <Ability label={'Unity Engine'} percentage="90%"/>
       <Ability label={'Unreal Engine'} percentage="45%"/>
-      <Ability label={'3D Software\n(Blender | Maya)'} percentage="60%"/>
+      <Ability label={'3D Software\n(Blender | Maya | Substance Painter)'} percentage="60%"/>
       <hr/>
       <h3>Project Management</h3>
       <Ability label={'VCS\n(GitHub | Perforce | GitLab)'} percentage="75%"/>
