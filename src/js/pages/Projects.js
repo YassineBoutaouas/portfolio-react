@@ -73,7 +73,7 @@ function SkillsPage(){
       <Ability label={'Microsoft .NET C#'} percentage="90%"/>
       <Ability label={'C++'} percentage="85%"/>
       <Ability label={'JavaScript'} percentage="70%"/>
-      <Ability label={'Python'} percentage="50%"/>
+      <Ability label={'Java'} percentage="65%"/>
       <hr/>
       <h3>Game Engines</h3>
       <Ability label={'Unity Engine'} percentage="90%"/>
